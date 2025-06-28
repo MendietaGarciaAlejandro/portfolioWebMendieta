@@ -43,7 +43,7 @@ export const Skills = () => {
 						{skills.map((skill) => (
 							<motion.span
 								key={skill.name}
-								whileHover={{ scale: 1.1 }}
+								whileHover={{ scale: 1.1, boxShadow: "0 4px 20px rgba(59,130,246,0.2)" }}
 								className="flex items-center gap-2 px-5 py-2 bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 rounded-full text-base shadow-sm"
 								transition={{ type: 'spring', stiffness: 300 }}
 							>

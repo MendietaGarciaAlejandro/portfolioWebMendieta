@@ -75,7 +75,7 @@ export const Contact = () => {
                         <div className="flex justify-center space-x-6 mt-4">
                             <a
                                 href="https://www.linkedin.com/in/alejandro-mendieta-garc%C3%ADa-9b6a30238/"
-                                className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+                                className="transition-transform duration-200 hover:scale-125 text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                                 target="_blank" rel="noopener noreferrer"
                             >
                                 LinkedIn
