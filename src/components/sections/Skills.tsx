@@ -1,29 +1,30 @@
 'use client';
 import { motion } from 'framer-motion';
+import { FaJava, FaWindows } from 'react-icons/fa';
+import { SiKotlin, SiSharp, SiDotnet, SiMysql, SiGithub, SiFlutter, SiJetbrains, SiHtml5, SiCss3, SiNodedotjs, SiSpring, SiReact, SiAngular, SiJavascript, SiPython, SiHibernate } from 'react-icons/si';
 
 const skills = [
-	'Java (Avanzado)',
-	'Kotlin (Avanzado)',
-	'C# (Avanzado)',
-	'Windows Forms (Avanzado)',
-	'.NET (Avanzado)',
-	'SQL (Avanzado)',
-	'Git & GitHub (Avanzado)',
-	'Flutter (Avanzado)',
-	'Jetpack Compose (Avanzado)',
-	'Compose Multiplatform (Avanzado)',
-	'Html5 & CSS3 (Intermedio)',
-	'Node.js (Intermedio)',
-	'Spring Boot (Intermedio)',
-	'PL/SQL (Intermedio)',
-	'React Native (Intermedio)',
-	'Python (Intermedio)',
-	'React (Básico)',
-	'Angular (Básico)',
-	'JavaScript (Básico)',
-	'ASP.NET (Básico)',
-	'Hibernate (Básico)',
-	'JavaFX (Básico)'
+	{ name: 'Java', icon: <FaJava className="inline-block mr-2" /> },
+	{ name: 'Kotlin', icon: <SiKotlin className="inline-block mr-2" /> },
+	{ name: 'C#', icon: <SiSharp className="inline-block mr-2" /> },
+	{ name: 'Windows Forms', icon: <FaWindows className="inline-block mr-2" /> },
+	{ name: '.NET', icon: <SiDotnet className="inline-block mr-2" /> },
+	{ name: 'SQL', icon: <SiMysql className="inline-block mr-2" /> },
+	{ name: 'Git & GitHub', icon: <SiGithub className="inline-block mr-2" /> },
+	{ name: 'Flutter', icon: <SiFlutter className="inline-block mr-2" /> },
+	{ name: 'Jetpack Compose', icon: <SiJetbrains className="inline-block mr-2" /> },
+	{ name: 'Compose Multiplatform', icon: <SiJetbrains className="inline-block mr-2" /> },
+	{ name: 'Html5 & CSS3', icon: <><SiHtml5 className="inline-block mr-2" /><SiCss3 className="inline-block mr-2" /></> },
+	{ name: 'Node.js', icon: <SiNodedotjs className="inline-block mr-2" /> },
+	{ name: 'Spring Boot', icon: <SiSpring className="inline-block mr-2" /> },
+	{ name: 'React Native', icon: <SiReact className="inline-block mr-2" /> },
+	{ name: 'Python', icon: <SiPython className="inline-block mr-2" /> },
+	{ name: 'React', icon: <SiReact className="inline-block mr-2" /> },
+	{ name: 'Angular', icon: <SiAngular className="inline-block mr-2" /> },
+	{ name: 'JavaScript', icon: <SiJavascript className="inline-block mr-2" /> },
+	{ name: 'ASP.NET', icon: <SiDotnet className="inline-block mr-2" /> },
+	{ name: 'Hibernate', icon: <SiHibernate className="inline-block mr-2" /> },
+	{ name: 'JavaFX', icon: <FaJava className="inline-block mr-2" /> }
 ];
 
 export const Skills = () => {
@@ -41,12 +42,13 @@ export const Skills = () => {
 					<div className="flex flex-wrap gap-4 justify-center">
 						{skills.map((skill) => (
 							<motion.span
-								key={skill}
+								key={skill.name}
 								whileHover={{ scale: 1.1 }}
-								className="px-5 py-2 bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 rounded-full text-base shadow-sm"
+								className="flex items-center gap-2 px-5 py-2 bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 rounded-full text-base shadow-sm"
 								transition={{ type: 'spring', stiffness: 300 }}
 							>
-								{skill}
+								{skill.icon}
+								{skill.name}
 							</motion.span>
 						))}
 					</div>

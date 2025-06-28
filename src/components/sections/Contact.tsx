@@ -73,24 +73,26 @@ export const Contact = () => {
                             También puedes encontrarme en:
                         </p>
                         <div className="flex justify-center space-x-6 mt-4">
-                            {/* Aquí puedes agregar tus enlaces a redes sociales */}
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/alejandro-mendieta-garc%C3%ADa-9b6a30238/"
                                 className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+                                target="_blank" rel="noopener noreferrer"
                             >
                                 LinkedIn
                             </a>
                             <a
-                                href="#"
+                                href="https://github.com/MendietaGarciaAlejandro"
                                 className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+                                target="_blank" rel="noopener noreferrer"
                             >
                                 GitHub
                             </a>
                             <a
-                                href="#"
+                                href="/CV_MendietaGarciaAlejandroJunio2025.pdf"
+                                download
                                 className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                             >
-                                Twitter
+                                Descargar CV
                             </a>
                         </div>
                     </div>
