@@ -39,9 +39,9 @@ export const Hero = () => {
                         transition={{ duration: 0.5 }}
                     >
                         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-                            ¡Hola! Soy{" "}
-                            <span className="text-blue-600 dark:text-blue-400">
-                                Alejandro Mendieta García
+                            ¡Hola! Soy<br />
+                            <span className="text-blue-600 dark:text-blue-400 text-5xl md:text-7xl block mt-2">
+                                Alejandro Mendieta
                             </span>
                         </h1>
                         <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">

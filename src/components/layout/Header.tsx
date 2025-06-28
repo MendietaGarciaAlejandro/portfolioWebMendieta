@@ -9,7 +9,7 @@ export const Header = () => {
     const menuItems = [
         { href: '#inicio', label: 'Inicio' },
         { href: '#sobre-mi', label: 'Sobre Mí' },
-        { href: '#skills', label: 'Skills' },
+        { href: '#tecnologias', label: 'Tecnologías' },
         { href: '#proyectos', label: 'Proyectos' },
         { href: '#contacto', label: 'Contacto' },
     ];
@@ -23,7 +23,7 @@ export const Header = () => {
             <nav className="container mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white">
-                        Portfolio
+                        Alejandro Mendieta
                     </Link>
 
                     {/* Desktop Menu */}
