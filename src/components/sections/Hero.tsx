@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export const Hero = () => {
     return (
@@ -17,12 +18,12 @@ export const Hero = () => {
                         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
                             ¡Hola! Soy{" "}
                             <span className="text-blue-600 dark:text-blue-400">
-                                [Tu Nombre]
+                                Alejandro Mendieta García
                             </span>
                         </h1>
                         <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                            Desarrollador Multiplataforma apasionado por crear soluciones
-                            innovadoras
+                            Desarrollador de software multiplataforma apasionado por la
+                            innovación y la tecnología.
                         </p>
                         <div className="flex space-x-4">
                             <motion.a
@@ -49,12 +50,15 @@ export const Hero = () => {
                         transition={{ duration: 0.5 }}
                         className="relative"
                     >
-                        {/* Placeholder para tu imagen o ilustración */}
-                        <div className="w-full h-[400px] bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
-                            {/* Reemplazar con tu imagen */}
-                            <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                                Tu imagen aquí
-                            </div>
+                        <div className="w-full h-[400px] bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden flex items-center justify-center">
+                            <Image
+                                src="/yo.png"
+                                alt="Foto de Alejandro Mendieta García"
+                                width={300}
+                                height={400}
+                                className="object-cover rounded-lg shadow-lg"
+                                priority
+                            />
                         </div>
                     </motion.div>
                 </div>

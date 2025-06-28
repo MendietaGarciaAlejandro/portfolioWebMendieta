@@ -1,0 +1,255 @@
+EDUCACIÓN Y FORMACIÓN
+10/09/2023–30/05/2025– C. de Vitoria, 3, Alcalá de Henares, España
+
+Técnico Superior en Desarrollo de Aplicaciones
+Multiplataforma
+I.E.S. Alonso de Avellaneda
+https://site.educa.madrid.org/ies.alonsodeavellan.alcala/
+
+Alejandro
+Mendieta García
+
+14/10/2021 – 27/06/2022 – Calle de San Cirilo, s/n, Alcalá de Henares, España
+
+Máster en Documentación, Archivos y Bibliotecas
+UAH https://www.uah.es/es/
+
+SOBRE MI
+Desarrollador de aplicaciones
+apasionado con experiencia en
+equipos multidisciplinarios. Enfocado
+en la innovación y el impacto positivo
+a través de soluciones tecnológicas.
+Comprometido con el aprendizaje
+constante y la resolución de
+desafíos en el mundo digital.
+
+03/09/2018 – 21/09/2021 – Calle Colegios, 2, Alcalá de Henares, España
+
+Grado en Historia
+UAH https://www.uah.es/es/
+20/09/2014 – 26/06/2015 – Calle Alalpardo, 2, Alcalá de Henares, España
+
+Grado Medio (Mecanizado) (1er año)
+I.E.S. Antonio Machado http://iesmachado.org/
+
+CONTACTO
+C/ Cervantes 7,
+28816 Camarma de Esteruelas, Madrid,
+España
+alexmengar@outlook.es
+(+34) 625223951
+
+COMPETENCIAS DE IDIOMA
+Inglés: B2 (comprensión auditivá, lectora,
+oral y escrita).
+Francés: B1 (comprensión auditivá,
+lectora, oral y escrita).
+Portugúes: A2 (comprensión auditivá,
+lectora, oral y escrita).
+
+EXPERIENCIA LABORAL
+20/03/2025 – 13/06/2025 – Alcalá de Henares , España
+
+Desarrollador de Software en Soluciones Informáticas ADV
+Soluciones Informáticas ADV
+Desarrollo de aplicaciones .NET (WindowsForms & ASP.NET).
+Creación de backend en Python y Frontend C# con LLM para realizar consultas SQL
+mediante IA a las base de datos (PostgreSQL) de la empresa.
+Desarrollo de módulo de comunicación Android/Multiplataforma mediante KMP/CMP
+Realización y diseño de informes (facturas, albaranes, etc.) para los clientes de ADV.
+Participar en el desarrollo y control de versiones (Git, Azure DevOps) tanto de las
+aplicaciones internas de la empresa, como en funcionalidades del software ERP.
+15/02/2021 – 28/05/2021 & 04/04/2022 – 24/06/2022 – Alcalá de Henares , España
+
+Ayudante en Prácticas en Archivo Universitario de Alcalá
+COMPETENCIAS DIGITALES
+Gestión de BB.DD. archivística (A3W).
+Administración de redes sociales del
+Archivo Universitario de Alcalá
+(2020-2021)
+Microsoft Office (Avanzado).
+(Word, Excel, PowerPoint, etc.).
+Competencia y responsabilidad en el
+trabajo telemático.
+Creación de Páginas web (HTML5, CSS5
+y JavaScript básico)
+Desarrollo Android en Java y Kotlin
+(Kotlin Multiplatform/Compose
+Multiplatform)
+
+UAH
+Revisión de documentos.
+Indexación de documentación en Base de Datos del Archivo.
+Ordenación de documentos electrónicos.
+Descripción de expedientes en papel.
+Análisis documental de materiales audiovisuales.
+Digitalización y tratamiento de documentos.
+Gestión documental de materiales universitarios.
+
+Registro de expedientes administrativos en la base de datos a nivel
+físico y tecnológico. Tramitado de préstamos documentales.
+Digitalización de actas académicas y hojas de transferencia
+
+OTROS DATOS DE INTERÉS
+21/11/2018- ACTUALIDAD
+
+Carné de Conducir B1
+Disponibilidad inmediata
+Fecha de Nacimiento: 15/08/1996
+
+COMPETENCIAS DIGITALES
+Gestión de BB.DD. archivística (A3W).
+Administración de redes sociales del
+Archivo Universitario de Alcalá
+(2020-2021)
+Microsoft Office (Avanzado).
+(Word, Excel, PowerPoint, etc.).
+Competencia y responsabilidad en el
+trabajo telemático.
+Creación de Páginas web (HTML5, CSS5
+y JavaScript básico)
+Desarrollo Android en Java y Kotlin
+(Kotlin Multiplatform/Compose
+Multiplatform)
+
+TECNOLOGÍAS PRINCIPALES
+Java (8, 17, 21)
+Nivel: Avanzado
+Conocimientos sólidos adquiridos en proyectos académicos y prácticas, desarrollando
+aplicaciones backend sencillas y pruebas unitarias con JUnit.
+
+Kotlin
+Nivel: Avanzado
+Desarrollo de aplicaciones Android y multiplataforma con Coroutines, Flow y DSLs propias.
+Integración con APIs REST y uso de Koin/Hilt para inyección de dependencias.
+
+C#
+Nivel: Avanzado
+Implementación de aplicaciones de consola y Windows Forms en .NET, empleando LINQ y
+Entity Framework en ejercicios y prácticas de módulo.
+
+Windows Forms
+Nivel: Avanzado
+Creación de interfaces de usuario ricas y mantenibles en entornos de escritorio,
+optimizando la experiencia y accesibilidad. Gestión eficiente de eventos y validaciones
+personalizadas.
+
+.NET
+Nivel: Avanzado
+Familiaridad de todo el ecosistema (.NET 6/7/8), desde APIs Web con ASP.NET Core hasta servicios
+Azure. Automatización de despliegues con CI/CD y Docker.
+
+SQL
+Nivel: Avanzado
+Diseño y optimización de bases de datos relacionales (MySQL, SQL Server, PostgreSQL), escritura
+de consultas complejas. Experiencia en procedimientos almacenados.
+
+Git
+Nivel: Avanzado
+Uso de Git en proyectos grupales: commits, branches y resolución de conflictos básicos; creación de
+alias para agilizar flujos.
+GitHub
+Nivel: Avanzado
+Gestión de repositorios propios, pull requests y GitHub Pages para documentación de prácticas,
+además de integración básica con Actions.
+
+Flutter
+Nivel: Avanzado
+Desarrollo de apps móviles sencillas con Dart en prácticas, construyendo UI responsive y
+conectando con APIs REST.
+
+Jetpack Compose
+Nivel: Avanzado
+Construcción de interfaces Android declarativas, modularizadas y testables. Uso de Compose
+Navigation, Material3 y performance tuning con recomposition scopes.
+
+Compose Multiplatform (KMP/CMP)
+Nivel: Avanzado
+Creación de módulos compartidos entre Android, WASM y escritorio, unificando lógica de negocio en
+Kotlin. Configuración de pipelines de compilación multiplataforma y pruebas common.
+
+COMPETENCIAS DIGITALES
+Gestión de BB.DD. archivística (A3W).
+Administración de redes sociales del
+Archivo Universitario de Alcalá
+(2020-2021)
+
+TECNOLOGÍAS SECUNDARIAS
+Html5 & CSS3
+Nivel: Intermedio
+Maquetación semántica y estilización responsiva en proyectos académicos y personales;
+uso de Flexbox y Grid para estructuras básicas.
+
+Microsoft Office (Avanzado).
+(Word, Excel, PowerPoint, etc.).
+
+JavaScript
+
+Competencia y responsabilidad en el
+trabajo telemático.
+
+Implementación de interactividad en páginas web con DOM y eventos; conocimientos de
+ES6+ en pequeños scripts y ejercicios.
+
+Creación de Páginas web (HTML5, CSS5
+y JavaScript básico)
+
+Python
+
+Nivel: Intermedio
+
+Nivel: Básico
+
+Desarrollo Android en Java y Kotlin
+(Kotlin Multiplatform/Compose
+Multiplatform)
+
+Scripts de automatización y análisis de datos sencillos; familiaridad con estructuras de
+datos y módulos estándar en prácticas.
+
+ASP.NET
+Nivel: Básico
+Desarrollo de APIs y páginas Razor básicas en ASP.NET Core; seguimiento de tutoriales para
+CRUD y autenticación simple.
+
+.
+PL/SQL
+Nivel: Intermedio
+Escritura de procedimientos almacenados y funciones en Oracle; manejo de cursores y
+bloqueos en ejercicios de base de datos.
+
+Spring Boot
+Nivel: Intermedio
+Creación de microservicios básicos con Spring Initializr; configuración de controladores REST y
+persistence layer con JPA.
+
+Hibernate
+Nivel: Básico
+Mapeo objeto-relacional simple en proyectos de módulo; configuración de entidades y relaciones en
+ejercicios de ORM.
+
+JavaFX
+Nivel: Básico
+Interfaces de escritorio básicas con layouts y controles estándar; integración mínima con lógica de
+negocio en prácticas.
+
+NodeJS
+Nivel: Intermedio
+Desarrollo de servidores ligeros con Express; gestión de rutas y middlewares en proyectos de
+clase.
+
+Angular
+Nivel: Básico
+Componentes y módulos básicos en Angular CLI; binding de datos y servicios simples en prácticas.
+
+React
+Nivel: Básico
+Creación de componentes funcionales y hooks sencillos; gestión de estado local en pequeños
+proyectos.
+React Native
+Nivel: Intermedio
+Desarrollo de pantallas móviles con componentes nativos; uso de Expo y navegación básica con
+React Navigation.
+
+
