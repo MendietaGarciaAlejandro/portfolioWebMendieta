@@ -1,11 +1,16 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 export const Contact = () => {
+    const [mounted, setMounted] = useState(false);
     const [form, setForm] = useState({ name: '', email: '', message: '' });
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
     const [errorMsg, setErrorMsg] = useState('');
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -37,6 +42,8 @@ export const Contact = () => {
             setErrorMsg('Error de red. Intenta más tarde.');
         }
     };
+
+    if (!mounted) return null; // Evita hydration mismatch
 
     return (
         <section id="contacto" className="py-20">
