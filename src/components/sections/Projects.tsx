@@ -32,7 +32,7 @@ export const Projects = () => {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                         Mis Proyectos
                     </h2>
                     <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -78,36 +78,6 @@ export const Projects = () => {
                     ))}
                 </div>
             </div>
-            <form
-                className="space-y-6"
-                action="https://formspree.io/f/xrbkrjkz"
-                method="POST"
-            >
-                <input
-                    type="text"
-                    name="nombre"
-                    placeholder="Tu nombre"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                />
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Tu email"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                />
-                <textarea
-                    name="mensaje"
-                    placeholder="Tu mensaje"
-                    rows={6}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                />
-                <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-md">
-                    Enviar mensaje
-                </button>
-            </form>
         </section>
     );
 };

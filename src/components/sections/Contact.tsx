@@ -1,7 +1,43 @@
 'use client';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export const Contact = () => {
+    const [form, setForm] = useState({ name: '', email: '', message: '' });
+    const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+    const [errorMsg, setErrorMsg] = useState('');
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setForm({ ...form, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus('sending');
+        setErrorMsg('');
+        try {
+            const res = await fetch('https://formspree.io/f/xrbkrjkz', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: form.name,
+                    email: form.email,
+                    message: form.message,
+                }),
+            });
+            if (res.ok) {
+                setStatus('success');
+                setForm({ name: '', email: '', message: '' });
+            } else {
+                setStatus('error');
+                setErrorMsg('No se pudo enviar el mensaje. Intenta de nuevo.');
+            }
+        } catch {
+            setStatus('error');
+            setErrorMsg('Error de red. Intenta más tarde.');
+        }
+    };
+
     return (
         <section id="contacto" className="py-20">
             <div className="container mx-auto px-4">
@@ -18,7 +54,7 @@ export const Contact = () => {
                         ¿Tienes un proyecto en mente? Me encantaría escucharte
                     </p>
 
-                    <form className="space-y-6">
+                    <form className="space-y-6" onSubmit={handleSubmit}>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -26,9 +62,13 @@ export const Contact = () => {
                         >
                             <input
                                 type="text"
+                                name="name"
                                 placeholder="Tu nombre"
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                                 required
+                                value={form.name}
+                                onChange={handleChange}
+                                disabled={status === 'sending'}
                             />
                         </motion.div>
 
@@ -39,9 +79,13 @@ export const Contact = () => {
                         >
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="Tu email"
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                                 required
+                                value={form.email}
+                                onChange={handleChange}
+                                disabled={status === 'sending'}
                             />
                         </motion.div>
 
@@ -51,10 +95,14 @@ export const Contact = () => {
                             viewport={{ once: true }}
                         >
                             <textarea
+                                name="message"
                                 placeholder="Tu mensaje"
                                 rows={6}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                                 required
+                                value={form.message}
+                                onChange={handleChange}
+                                disabled={status === 'sending'}
                             ></textarea>
                         </motion.div>
 
@@ -62,10 +110,17 @@ export const Contact = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             type="submit"
-                            className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors w-full md:w-auto"
+                            className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors w-full md:w-auto disabled:opacity-60"
+                            disabled={status === 'sending'}
                         >
-                            Enviar mensaje
+                            {status === 'sending' ? 'Enviando...' : 'Enviar mensaje'}
                         </motion.button>
+                        {status === 'success' && (
+                            <p className="text-green-600 dark:text-green-400 mt-2">¡Mensaje enviado correctamente!</p>
+                        )}
+                        {status === 'error' && (
+                            <p className="text-red-600 dark:text-red-400 mt-2">{errorMsg}</p>
+                        )}
                     </form>
 
                     <div className="mt-12">
