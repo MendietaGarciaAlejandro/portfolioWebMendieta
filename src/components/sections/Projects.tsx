@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { FaGithub } from 'react-icons/fa';
 
 export const Projects = () => {
     const projects = [
@@ -105,13 +106,13 @@ export const Projects = () => {
                             transition={{ delay: index * 0.2 }}
                             className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col"
                         >
-                            <div className="h-48 bg-gray-200 dark:bg-gray-600 relative">
+                            <div className="relative w-full aspect-[4/3] bg-gray-200 dark:bg-gray-600 border-b-2 border-gray-100 dark:border-gray-700">
                                 {project.image ? (
                                     <Image
                                         src={project.image}
                                         alt={project.title}
                                         fill
-                                        className="object-cover object-top"
+                                        className="object-cover object-top rounded-t-lg"
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         priority={index === 0}
                                     />
@@ -129,25 +130,21 @@ export const Projects = () => {
                                 )}
                             </div>
                             <div className="p-6 flex-1 flex flex-col">
-                                <a
-                                    href={project.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="hover:underline"
-                                >
-                                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                                <div className="flex items-center justify-between mb-2">
+                                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                                         {project.title}
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            fill="currentColor"
-                                            className="w-5 h-5 text-blue-600 dark:text-blue-400 inline-block"
-                                        >
-                                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z" />
-                                            <path d="M5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z" />
-                                        </svg>
                                     </h3>
-                                </a>
+                                    <a
+                                        href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`Ver repositorio de ${project.title} en GitHub`}
+                                        title="Ver en GitHub"
+                                        className="text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors ml-2"
+                                    >
+                                        <FaGithub className="w-7 h-7" />
+                                    </a>
+                                </div>
                                 <p className="text-gray-600 dark:text-gray-300 mb-4 flex-1">
                                     {project.description}
                                 </p>
