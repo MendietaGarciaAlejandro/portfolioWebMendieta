@@ -57,6 +57,20 @@ export const Projects = () => {
             image: '/proyectos/mirecetario.png',
             github: 'https://github.com/MendietaGarciaAlejandro/mirecetario',
         },
+        {
+            title: 'OrganizaME',
+            description:
+                'Aplicación multiplataforma para organización personal y gestión de tareas, desarrollada con Kotlin Multiplatform y Compose Multiplatform. Permite usar la misma base de código en Android, Web y Desktop.',
+            technologies: [
+                'Kotlin Multiplatform',
+                'Compose Multiplatform',
+                'Android',
+                'Web',
+                'Desktop',
+            ],
+            image: '/proyectos/organizame.png', // Añade la imagen correspondiente en /public/proyectos
+            github: 'https://github.com/MendietaGarciaAlejandro/OrganizaME',
+        },
     ];
 
     return (
