@@ -77,6 +77,21 @@ export const Projects = () => {
             github: 'https://github.com/MendietaGarciaAlejandro/OrganizaME',
             inDevelopment: true,
         },
+        {
+            title: 'BlockchainAMG',
+            description:
+                'Proyecto en desarrollo para explorar y aprender sobre tecnología blockchain y contratos inteligentes. Incluye contratos en Solidity, scripts y tests usando Hardhat, TypeScript y herramientas modernas de desarrollo Web3.',
+            technologies: [
+                'Solidity',
+                'TypeScript',
+                'Hardhat',
+                'Ethers.js',
+                'Node.js',
+            ],
+            image: '/proyectos/blockchainamg.png', // Añade la imagen correspondiente en /public/proyectos
+            github: 'https://github.com/MendietaGarciaAlejandro/BlockchainAMG',
+            inDevelopment: true,
+        },
     ];
 
     return (
