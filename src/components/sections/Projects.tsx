@@ -17,6 +17,7 @@ export const Projects = () => {
             ],
             image: '/proyectos/connexus.png', // pon aquí una imagen real si tienes
             github: 'https://github.com/ConneXusServerless/ConneXus_serverless',
+            inDevelopment: false,
         },
         {
             title: 'Lista de Compra Compose',
@@ -25,6 +26,7 @@ export const Projects = () => {
             technologies: ['Kotlin', 'Jetpack Compose', 'Coroutines', 'AndroidX'],
             image: '/proyectos/listacompra.png',
             github: 'https://github.com/MendietaGarciaAlejandro/ListaCompraCompose',
+            inDevelopment: false,
         },
         {
             title: 'PathOut',
@@ -41,6 +43,7 @@ export const Projects = () => {
             ],
             image: '/proyectos/pathout.png',
             github: 'https://github.com/MendietaGarciaAlejandro/PathOut',
+            inDevelopment: true,
         },
         {
             title: 'MiRecetario',
@@ -56,6 +59,7 @@ export const Projects = () => {
             ],
             image: '/proyectos/mirecetario.png',
             github: 'https://github.com/MendietaGarciaAlejandro/mirecetario',
+            inDevelopment: true,
         },
         {
             title: 'OrganizaME',
@@ -70,6 +74,7 @@ export const Projects = () => {
             ],
             image: '/proyectos/organizame.png', // Añade la imagen correspondiente en /public/proyectos
             github: 'https://github.com/MendietaGarciaAlejandro/OrganizaME',
+            inDevelopment: true,
         },
     ];
 
@@ -113,6 +118,13 @@ export const Projects = () => {
                                 ) : (
                                     <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                                         Imagen del proyecto
+                                    </div>
+                                )}
+                                {project.inDevelopment && (
+                                    <div className="absolute top-2 right-2">
+                                        <span className="px-2 py-1 bg-amber-500 text-white text-xs font-medium rounded-full shadow-sm">
+                                            En desarrollo
+                                        </span>
                                     </div>
                                 )}
                             </div>
