@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { FaJava, FaWindows } from 'react-icons/fa';
-import { SiKotlin, SiSharp, SiDotnet, SiMysql, SiGithub, SiFlutter, SiJetbrains, SiHtml5, SiCss3, SiNodedotjs, SiSpring, SiReact, SiAngular, SiJavascript, SiPython, SiHibernate, SiNextdotjs } from 'react-icons/si';
+import { SiKotlin, SiSharp, SiDotnet, SiMysql, SiGithub, SiFlutter, SiJetbrains, SiHtml5, SiCss3, SiNodedotjs, SiSpring, SiReact, SiAngular, SiJavascript, SiPython, SiHibernate, SiNextdotjs, SiTypescript, SiSolidity } from 'react-icons/si';
 
 const mainSkills = [
 	{
@@ -58,6 +58,11 @@ const mainSkills = [
 		name: 'Compose Multiplatform',
 		icon: <SiJetbrains className="inline-block mr-2" />,
 		desc: 'Avanzado. Módulos compartidos Android/WASM/escritorio, pipelines multiplataforma.'
+	},
+	{
+		name: 'TypeScript',
+		icon: <SiTypescript className="inline-block mr-2" />,
+		desc: 'Avanzado. Type safety, interfaces, genéricos, Next.js, React.'
 	},
 ];
 
@@ -131,6 +136,11 @@ const secondarySkills = [
 		name: 'Next.js',
 		icon: <SiNextdotjs className="inline-block mr-2" />,
 		desc: 'Básico. Páginas estáticas y dinámicas, enrutamiento, API routes.'
+	},
+	{
+		name: 'Solidity',
+		icon: <SiSolidity className="inline-block mr-2" />,
+		desc: 'Básico. Smart contracts, Hardhat, tests básicos.'
 	},
 ];
 
