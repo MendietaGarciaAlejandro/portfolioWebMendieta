@@ -21,7 +21,7 @@ export const Contact = () => {
         setStatus('sending');
         setErrorMsg('');
         try {
-            const res = await fetch('https://formspree.io/f/xrbkrjkz', {
+            const res = await fetch('https://formspree.io/f/mgvydjww', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -150,7 +150,7 @@ export const Contact = () => {
                                 GitHub
                             </a>
                             <a
-                                href="/CV_MendietaGarciaAlejandroJunio2025.pdf"
+                                href="/CV_MendietaGarciaAlejandroJulio2025.pdf"
                                 download
                                 className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                             >
