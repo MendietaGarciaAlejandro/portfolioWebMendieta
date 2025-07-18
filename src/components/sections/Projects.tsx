@@ -6,6 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 export const Projects = () => {
     const projects = [
         {
+            visible: true,
             title: 'ConneXus',
             description:
                 'App multiplataforma de mensajería privada (E2EE) y foro anónimo. UI y lógica compartida con Kotlin Multiplatform y Jetpack Compose. Backend escalable con Supabase (PostgreSQL, Auth, Realtime).',
@@ -21,6 +22,7 @@ export const Projects = () => {
             inDevelopment: false,
         },
         {
+            visible: true,
             title: 'Lista de Compra Compose',
             description:
                 'Aplicación Android moderna para gestionar listas de la compra. UI con Jetpack Compose, Material Design y soporte para Android 8+. Código limpio y modular.',
@@ -30,6 +32,7 @@ export const Projects = () => {
             inDevelopment: false,
         },
         {
+            visible: false,
             title: 'PathOut',
             description:
                 'App multiplataforma (web, móvil y escritorio) para gestionar puntos de interés en mapas. Interfaz centralizada, gestión de favoritos, exportación de datos y soporte multiplataforma con React Native, Expo y Tauri.',
@@ -47,6 +50,7 @@ export const Projects = () => {
             inDevelopment: true,
         },
         {
+            visible: false,
             title: 'MiRecetario',
             description:
                 'App Flutter para gestionar recetas, planificar menús semanales y generar automáticamente la lista de la compra. Sincronización multiplataforma y base de datos local.',
@@ -63,6 +67,7 @@ export const Projects = () => {
             inDevelopment: true,
         },
         {
+            visible: false,
             title: 'OrganizaME',
             description:
                 'Aplicación multiplataforma para organización personal y gestión de tareas, desarrollada con Kotlin Multiplatform y Compose Multiplatform. Permite usar la misma base de código en Android, Web y Desktop.',
@@ -78,6 +83,7 @@ export const Projects = () => {
             inDevelopment: true,
         },
         {
+            visible: false,
             title: 'BlockchainAMG',
             description:
                 'Proyecto en desarrollo para explorar y aprender sobre tecnología blockchain y contratos inteligentes. Incluye contratos en Solidity, scripts y tests usando Hardhat, TypeScript y herramientas modernas de desarrollo Web3.',
@@ -112,7 +118,7 @@ export const Projects = () => {
                 </motion.div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((project, index) => (
+                    {projects.filter(project => project.visible).map((project, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
